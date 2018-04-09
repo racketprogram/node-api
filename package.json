@@ -1,0 +1,36 @@
+{
+    "name": "koa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "serve": "cross-env NODE_ENV=production node dist/server.js",
+        "build": "npm run tslint && npm run build-ts",
+        "build-ts": "tsc",
+        "watch": "npm run tslint && npm run watch-ts",
+        "watch-ts": "tsc -w",
+        "tslint": "tslint -c tslint.json -p tsconfig.json"
+    },
+    "dependencies": {
+        "@types/koa-router": "^7.0.27",
+        "@types/node": "^9.6.1",
+        "inversify": "^4.11.1",
+        "koa": "^2.5.0",
+        "koa-router": "^7.4.0",
+        "mysql": "^2.14.1",
+        "mysql2": "^1.5.3",
+        "reflect-metadata": "^0.1.10",
+        "tslint": "^5.9.1",
+        "typeorm": "0.1.20",
+        "typescript": "^2.8.1"
+    },
+    "devDependencies": {
+        "@types/node": "^8.0.29",
+        "cross-env": "^5.1.4",
+        "ts-node": "3.3.0",
+        "typescript": "2.5.2"
+    },
+    "author": "",
+    "license": "ISC"
+}
